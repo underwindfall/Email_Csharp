@@ -4,7 +4,7 @@
 Programm LumiSoft Mail Server is a mailserver. 
 
 ###General:
-*SMTP/POP3/IMAP4
+* SMTP/POP3/IMAP4
   * IP access filtering
   * User mailbox size limit
   * Supports XML or MSSQL databases
