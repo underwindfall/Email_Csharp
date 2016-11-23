@@ -2,7 +2,8 @@
 
 [Lumisoft for .NET](http://www.lumisoft.ee/lswww/eng/products/mail_server/mail_index_eng.aspx?type=info) 
 Programm LumiSoft Mail Server is a mailserver. 
-
+###Interface Email
+<img src="https://github.com/underwindfall/Email_Csharp/blob/master/email.jpg" />
 ###General:
 * SMTP/POP3/IMAP4
   * IP access filtering
