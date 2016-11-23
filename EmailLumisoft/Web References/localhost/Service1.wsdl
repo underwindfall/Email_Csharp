@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginSuccess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginSuccessResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSectionForMail">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSectionForMailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getEmailData">
+        <s:complexType />
+      </s:element>
+      <s:element name="getEmailDataResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getName">
+        <s:complexType />
+      </s:element>
+      <s:element name="getNameResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="logincompte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userpwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="logincompteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginSuccessSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginSuccess" />
+  </wsdl:message>
+  <wsdl:message name="LoginSuccessSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginSuccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSectionForMailSoapIn">
+    <wsdl:part name="parameters" element="tns:getSectionForMail" />
+  </wsdl:message>
+  <wsdl:message name="getSectionForMailSoapOut">
+    <wsdl:part name="parameters" element="tns:getSectionForMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEmailDataSoapIn">
+    <wsdl:part name="parameters" element="tns:getEmailData" />
+  </wsdl:message>
+  <wsdl:message name="getEmailDataSoapOut">
+    <wsdl:part name="parameters" element="tns:getEmailDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="getNameSoapIn">
+    <wsdl:part name="parameters" element="tns:getName" />
+  </wsdl:message>
+  <wsdl:message name="getNameSoapOut">
+    <wsdl:part name="parameters" element="tns:getNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="logincompteSoapIn">
+    <wsdl:part name="parameters" element="tns:logincompte" />
+  </wsdl:message>
+  <wsdl:message name="logincompteSoapOut">
+    <wsdl:part name="parameters" element="tns:logincompteResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginSuccessHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginSuccessHttpGetOut" />
+  <wsdl:message name="getSectionForMailHttpGetIn" />
+  <wsdl:message name="getSectionForMailHttpGetOut" />
+  <wsdl:message name="getEmailDataHttpGetIn" />
+  <wsdl:message name="getEmailDataHttpGetOut" />
+  <wsdl:message name="getNameHttpGetIn" />
+  <wsdl:message name="getNameHttpGetOut" />
+  <wsdl:message name="logincompteHttpGetIn">
+    <wsdl:part name="userId" type="s:string" />
+    <wsdl:part name="userpwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="logincompteHttpGetOut" />
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginSuccessHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginSuccessHttpPostOut" />
+  <wsdl:message name="getSectionForMailHttpPostIn" />
+  <wsdl:message name="getSectionForMailHttpPostOut" />
+  <wsdl:message name="getEmailDataHttpPostIn" />
+  <wsdl:message name="getEmailDataHttpPostOut" />
+  <wsdl:message name="getNameHttpPostIn" />
+  <wsdl:message name="getNameHttpPostOut" />
+  <wsdl:message name="logincompteHttpPostIn">
+    <wsdl:part name="userId" type="s:string" />
+    <wsdl:part name="userpwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="logincompteHttpPostOut" />
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginSuccess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">login</wsdl:documentation>
+      <wsdl:input message="tns:LoginSuccessSoapIn" />
+      <wsdl:output message="tns:LoginSuccessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSectionForMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">getSectionForMail</wsdl:documentation>
+      <wsdl:input message="tns:getSectionForMailSoapIn" />
+      <wsdl:output message="tns:getSectionForMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmailData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">getEmailData</wsdl:documentation>
+      <wsdl:input message="tns:getEmailDataSoapIn" />
+      <wsdl:output message="tns:getEmailDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">get</wsdl:documentation>
+      <wsdl:input message="tns:getNameSoapIn" />
+      <wsdl:output message="tns:getNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="logincompte">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login</wsdl:documentation>
+      <wsdl:input message="tns:logincompteSoapIn" />
+      <wsdl:output message="tns:logincompteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Service1HttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginSuccess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">login</wsdl:documentation>
+      <wsdl:input message="tns:LoginSuccessHttpGetIn" />
+      <wsdl:output message="tns:LoginSuccessHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSectionForMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">getSectionForMail</wsdl:documentation>
+      <wsdl:input message="tns:getSectionForMailHttpGetIn" />
+      <wsdl:output message="tns:getSectionForMailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmailData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">getEmailData</wsdl:documentation>
+      <wsdl:input message="tns:getEmailDataHttpGetIn" />
+      <wsdl:output message="tns:getEmailDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">get</wsdl:documentation>
+      <wsdl:input message="tns:getNameHttpGetIn" />
+      <wsdl:output message="tns:getNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="logincompte">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login</wsdl:documentation>
+      <wsdl:input message="tns:logincompteHttpGetIn" />
+      <wsdl:output message="tns:logincompteHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Service1HttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginSuccess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">login</wsdl:documentation>
+      <wsdl:input message="tns:LoginSuccessHttpPostIn" />
+      <wsdl:output message="tns:LoginSuccessHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSectionForMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">getSectionForMail</wsdl:documentation>
+      <wsdl:input message="tns:getSectionForMailHttpPostIn" />
+      <wsdl:output message="tns:getSectionForMailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmailData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">getEmailData</wsdl:documentation>
+      <wsdl:input message="tns:getEmailDataHttpPostIn" />
+      <wsdl:output message="tns:getEmailDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">get</wsdl:documentation>
+      <wsdl:input message="tns:getNameHttpPostIn" />
+      <wsdl:output message="tns:getNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="logincompte">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login</wsdl:documentation>
+      <wsdl:input message="tns:logincompteHttpPostIn" />
+      <wsdl:output message="tns:logincompteHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginSuccess">
+      <soap:operation soapAction="http://tempuri.org/LoginSuccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSectionForMail">
+      <soap:operation soapAction="http://tempuri.org/getSectionForMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmailData">
+      <soap:operation soapAction="http://tempuri.org/getEmailData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <soap:operation soapAction="http://tempuri.org/getName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logincompte">
+      <soap:operation soapAction="http://tempuri.org/logincompte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginSuccess">
+      <soap12:operation soapAction="http://tempuri.org/LoginSuccess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSectionForMail">
+      <soap12:operation soapAction="http://tempuri.org/getSectionForMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmailData">
+      <soap12:operation soapAction="http://tempuri.org/getEmailData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <soap12:operation soapAction="http://tempuri.org/getName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logincompte">
+      <soap12:operation soapAction="http://tempuri.org/logincompte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1HttpGet" type="tns:Service1HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginSuccess">
+      <http:operation location="/LoginSuccess" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getSectionForMail">
+      <http:operation location="/getSectionForMail" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getEmailData">
+      <http:operation location="/getEmailData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <http:operation location="/getName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="logincompte">
+      <http:operation location="/logincompte" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1HttpPost" type="tns:Service1HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginSuccess">
+      <http:operation location="/LoginSuccess" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getSectionForMail">
+      <http:operation location="/getSectionForMail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getEmailData">
+      <http:operation location="/getEmailData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <http:operation location="/getName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="logincompte">
+      <http:operation location="/logincompte" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://localhost/webserv/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://localhost/webserv/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1HttpGet" binding="tns:Service1HttpGet">
+      <http:address location="http://localhost/webserv/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1HttpPost" binding="tns:Service1HttpPost">
+      <http:address location="http://localhost/webserv/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,9 @@
+C:\Users\子煜\Downloads\Email_Test\Email_Test\bin\Email_Test.dll.config
+C:\Users\子煜\Downloads\Email_Test\Email_Test\bin\Email_Test.dll
+C:\Users\子煜\Downloads\Email_Test\Email_Test\bin\Email_Test.pdb
+C:\Users\子煜\Downloads\Email_Test\Email_Test\bin\LumiSoft.Net.xml
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Release\Email_Test.csprojResolveAssemblyReference.cache
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Release\Email_Test.Properties.Resources.resources
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Release\Email_Test.csproj.GenerateResource.Cache
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Release\Email_Test.dll
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Release\Email_Test.pdb

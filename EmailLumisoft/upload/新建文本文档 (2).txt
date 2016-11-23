@@ -1,0 +1,132 @@
+Dim c_lefttwo(20,5)
+
+
+Function getinitcolor(x, y)
+Dim resultat(2)
+Dim i=0,r,g,b,rr,gg,bb
+GetPixelRGB( x, y, r, g, b)
+While i < 10
+GetPixelRGB(x, y, rr, gg, bb)
+If(rr=r and gg=g and bb=b) Then
+i = i + 1
+Else 
+r = rr
+g = gg
+b = bb
+End If
+
+Wend	
+resultat(0) = r
+resultat(1) = g
+resultat(2) = b
+getinitcolor=resultat	
+End Function
+
+Dim color(2),icount=0
+
+color = getinitcolor(381, 196)
+c_lefttwo(0, 0) = color(0)
+c_lefttwo(0, 1) = color(1)
+c_lefttwo(0, 2) = color(2)
+
+
+color = getinitcolor(429,225)
+c_lefttwo(1, 0) = color(0)
+c_lefttwo(1, 1) = color(1)
+c_lefttwo(1, 2) = color(2)
+
+
+color = getinitcolor(408,301)
+c_lefttwo(2, 0) = color(0)
+c_lefttwo(2, 1) = color(1)
+c_lefttwo(2, 2) = color(2)
+
+
+color = getinitcolor(339,291)
+c_lefttwo(3, 0) = color(0)
+c_lefttwo(3, 1) = color(1)
+c_lefttwo(3, 2) = color(2)
+
+
+color = getinitcolor(327,230)
+c_lefttwo(4, 0) = color(0)
+c_lefttwo(4, 1) = color(1)
+c_lefttwo(4, 2) = color(2)
+
+If (testc(0, 0, 0, 0, 0, 1) = 0) Then 
+	TracePrint "ok"
+	Else 
+	Dim c(2)
+	c = testc(0, 0, 0, 0, 0, 1)
+	TracePrint c(0),c(1),c(2)
+End If
+
+TracePrint c_lefttwo(0, 0), c_lefttwo(0, 1), c_lefttwo(0, 2)
+TracePrint c_lefttwo(1, 0), c_lefttwo(1, 1), c_lefttwo(1, 2)
+TracePrint c_lefttwo(2, 0), c_lefttwo(2, 1), c_lefttwo(2, 2)
+TracePrint c_lefttwo(3, 0), c_lefttwo(3, 1), c_lefttwo(3, 2)
+TracePrint c_lefttwo(4, 0), c_lefttwo(4, 1), c_lefttwo(4, 2)
+
+Function testc(r, g, b, rr, gg, bb)
+	If (r = rr and g = gg and b = bb) Then 
+		testc = 0
+		Else 
+		Dim c(2)
+		c(0) = rr - r
+		c(1) = gg - g
+		c(2) = bb - b
+		testc=c
+	End If
+End Function
+
+While 1
+GetPixelRGB(381,196,c_lefttwo(0,3),c_lefttwo(0,4),c_lefttwo(0,5))
+GetPixelRGB(429,225,c_lefttwo(1,3),c_lefttwo(1,4),c_lefttwo(1,5))
+GetPixelRGB(408,301,c_lefttwo(2,3),c_lefttwo(2,4),c_lefttwo(2,5))
+GetPixelRGB(339,291,c_lefttwo(3,3),c_lefttwo(3,4),c_lefttwo(3,5))
+GetPixelRGB 327, 230, c_lefttwo(4, 3), c_lefttwo(4, 4), c_lefttwo(4, 5)
+
+TracePrint c_lefttwo(0, 0), c_lefttwo(0, 1), c_lefttwo(0, 2),c_lefttwo(0,3),c_lefttwo(0,4),c_lefttwo(0,5)
+TracePrint c_lefttwo(1, 0), c_lefttwo(1, 1), c_lefttwo(1, 2),c_lefttwo(1,3),c_lefttwo(1,4),c_lefttwo(1,5)
+TracePrint c_lefttwo(2, 0), c_lefttwo(2, 1), c_lefttwo(2, 2), c_lefttwo(2, 3), c_lefttwo(2, 4), c_lefttwo(2, 5)
+TracePrint c_lefttwo(3, 0), c_lefttwo(3, 1), c_lefttwo(3, 2), c_lefttwo(3, 3), c_lefttwo(3, 4), c_lefttwo(3, 5)
+TracePrint c_lefttwo(4, 0), c_lefttwo(4, 1), c_lefttwo(4, 2), c_lefttwo(4, 3), c_lefttwo(4, 4), c_lefttwo(4, 5)
+
+//
+//c_lefttwo (0, 0)=c_lefttwo(0,3)
+//c_lefttwo (0, 1)=c_lefttwo(0,4)
+//c_lefttwo(0, 2)=c_lefttwo(0,5)
+//
+//c_lefttwo (1, 0)=c_lefttwo(1,3)
+//c_lefttwo (1, 1)=c_lefttwo(1,4)
+//c_lefttwo(1, 2)=c_lefttwo(1,5)
+//
+//c_lefttwo (2, 0)=c_lefttwo(2,3)
+//c_lefttwo (2, 1)=c_lefttwo(2,4)
+//c_lefttwo(2, 2)=c_lefttwo(2,5)
+//
+//c_lefttwo (3, 0)=c_lefttwo(3,3)
+//c_lefttwo (3, 1)=c_lefttwo(3,4)
+//c_lefttwo(3, 2)=c_lefttwo(3,5)
+//
+//c_lefttwo (4, 0)=c_lefttwo(4,3)
+//c_lefttwo (4, 1)=c_lefttwo(4,4)
+//c_lefttwo(4, 2)=c_lefttwo(4,5)
+
+
+
+
+
+
+If (testc(c_lefttwo(0, 0), c_lefttwo(0, 1), c_lefttwo(0, 2),c_lefttwo(0,3),c_lefttwo(0,4),c_lefttwo(0,5)) = 0 and testc(c_lefttwo(1, 0), c_lefttwo(1, 1), c_lefttwo(1, 2),c_lefttwo(1,3),c_lefttwo(1,4),c_lefttwo(1,5)) = 0 and testc(c_lefttwo(2, 0), c_lefttwo(2, 1), c_lefttwo(2, 2),c_lefttwo(2,3),c_lefttwo(2,4),c_lefttwo(2,5)) = 0 and testc(c_lefttwo(3, 0), c_lefttwo(3, 1), c_lefttwo(3, 2),c_lefttwo(3,3),c_lefttwo(3,4),c_lefttwo(3,5)) = 0 and testc(c_lefttwo(4, 0), c_lefttwo(4, 1), c_lefttwo(4, 2),c_lefttwo(4,3),c_lefttwo(4,4),c_lefttwo(4,5)) = 0 ) Then 
+TracePrint "ok"
+Else 
+TracePrint "no"
+end if
+//TracePrint c_lefttwo(0, 0), c_lefttwo(0, 1), c_lefttwo(0, 2)
+//TracePrint c_lefttwo(1, 0), c_lefttwo(1, 1), c_lefttwo(1, 2)
+//TracePrint c_lefttwo(2, 0), c_lefttwo(2, 1), c_lefttwo(2, 2)
+//TracePrint c_lefttwo(3, 0), c_lefttwo(3, 1), c_lefttwo(3, 2)
+//TracePrint c_lefttwo(4, 0), c_lefttwo(4, 1), c_lefttwo(4, 2)
+
+Wend

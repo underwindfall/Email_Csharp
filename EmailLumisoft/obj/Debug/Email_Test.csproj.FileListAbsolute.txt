@@ -1,0 +1,37 @@
+C:\Users\Sipcom-pc-info\Documents\Visual Studio 2012\Projects\Email_Test\Email_Test\bin\OpenPop.dll
+C:\Users\Sipcom-pc-info\Documents\Visual Studio 2012\Projects\Email_Test\Email_Test\obj\Debug\Email_Test.Properties.Resources.resources
+C:\Users\Sipcom-pc-info\Documents\Visual Studio 2012\Projects\Email_Test\Email_Test\obj\Debug\Email_Test.csproj.GenerateResource.Cache
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\bin\Email_Test.dll
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\bin\Email_Test.pdb
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\bin\Dimac.JMail.dll
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\bin\Dimac.JMail.Smtp.dll
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\bin\LitJSON.dll
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\bin\LumiSoft.Net.dll
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\bin\LumiSoft.Net.pdb
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\bin\LumiSoft.Net.xml
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\obj\Debug\Email_Test.dll
+C:\Users\Sipcom-pc-info\documents\visual studio 2012\Projects\Email_Test\Email_Test\obj\Debug\Email_Test.pdb
+C:\Users\Sipcom-pc-info\Documents\Visual Studio 2012\Projects\Email_Test\Email_Test\obj\Debug\Email_Test.csprojResolveAssemblyReference.cache
+C:\Users\子煜\Downloads\Email_Test\Email_Test\bin\Email_Test.dll.config
+C:\Users\子煜\Downloads\Email_Test\Email_Test\bin\Email_Test.dll
+C:\Users\子煜\Downloads\Email_Test\Email_Test\bin\Email_Test.pdb
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Debug\Email_Test.Properties.Resources.resources
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Debug\Email_Test.csproj.GenerateResource.Cache
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Debug\Email_Test.dll
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Debug\Email_Test.pdb
+C:\Users\子煜\Downloads\Email_Test\Email_Test\obj\Debug\Email_Test.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Email_Test\bin\Email_Test.dll.config
+C:\inetpub\wwwroot\Email_Test\bin\Email_Test.dll
+C:\inetpub\wwwroot\Email_Test\bin\Email_Test.pdb
+C:\inetpub\wwwroot\Email_Test\obj\Debug\Email_Test.Properties.Resources.resources
+C:\inetpub\wwwroot\Email_Test\obj\Debug\Email_Test.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\Email_Test\obj\Debug\Email_Test.dll
+C:\inetpub\wwwroot\Email_Test\obj\Debug\Email_Test.pdb
+C:\inetpub\wwwroot\Email_Test\obj\Debug\Email_Test.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\EmailLumisoft\bin\Email_Test.dll
+C:\inetpub\wwwroot\EmailLumisoft\bin\Email_Test.pdb
+C:\inetpub\wwwroot\EmailLumisoft\obj\Debug\Email_Test.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\EmailLumisoft\obj\Debug\Email_Test.Properties.Resources.resources
+C:\inetpub\wwwroot\EmailLumisoft\obj\Debug\Email_Test.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\EmailLumisoft\obj\Debug\Email_Test.dll
+C:\inetpub\wwwroot\EmailLumisoft\obj\Debug\Email_Test.pdb

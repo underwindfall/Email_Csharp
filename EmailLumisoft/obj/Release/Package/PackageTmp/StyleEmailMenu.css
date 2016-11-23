@@ -1,0 +1,74 @@
+﻿body {
+  
+}
+
+.hidden { display:none;}
+
+.button_normal {
+    border:0px white;
+    background-color:white;
+    width:150px;
+    height:30px;
+    font-family:"Times New Roman",Serif;
+    font-size:100%;
+    text-align:left;
+    direction:ltr;
+
+}
+.button_style1 {
+    width:100px;
+    -webkit-border-radius: 15px;
+}  
+.button_normal.moved {
+    background-color:#FFCCFF;
+    }
+
+.button_normal.nouvelle {
+    font-weight:bold;
+    }
+.button_normal.clicked {
+    color:red;
+    background-color:#FFCCFF;
+    }
+
+.div_normal {
+    width:200px;
+    height:30px;
+    border:0px white;
+    position:relative;
+    margin-top:5px;
+}
+
+.div_normal.moved {
+    background-color:#FFCCFF;
+}
+
+.div_normal.clicked {
+    background-color:#FFCCFF;
+    border:2px red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
